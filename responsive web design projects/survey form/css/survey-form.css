@@ -1,0 +1,10 @@
+.card {
+  width: 90%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+html, body {
+  background-color: seagreen;
+}
