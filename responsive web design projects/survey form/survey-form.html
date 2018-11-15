@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form - freeCodeCamp</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="card">
+  <div class="card-body">
+    <div class="text-center">
+    <h1 class="card-title" id="title">Survey Form</h1>
+    <p class="card-subtitle text-muted" id="description">Let us know how we can improve</p>
+    </div>
+    <form id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label">Name (required)</label>
+        <input type="text" class="form-control" placeholder="Enter your name" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label">Email (required)</label>
+        <input type="email" class="form-control" placeholder="you@example.com" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="number" id="number-label">Age (required)</label>
+        <input type="number" class="form-control" id="number" placeholder="Enter a number" label="Age" min="12" max="110" required>
+      </div>
+      <div class="form-group">
+        <label for="dropdown">Which option best describes your current role?</label>
+        <select class="form-control" id="dropdown">
+          <option disabled>Select an option</option>
+          <option>Student</option>
+          <option>Full Time Job</option>
+          <option>Half-time Job</option>
+          <option>Prefer not to say</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <legend class="col-form-label">How likely are you to suggest freeCodeCamp to people you know?</legend>
+        <div class="text-center">
+        <div class="form-check form-check-inline">
+          <input type="radio" class="form-check-input" name="radioOptions" id="Likely" value="Likely">
+          <label for="Likely" class="form-check-label">Likely</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input type="radio" class="form-check-input" name="radioOptions" id="Neutral" value="Neutral">
+          <label for="Neutral" class="form-check-label">Neutral</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input type="radio" class="form-check-input" name="radioOptions" id="Unlikely" value="Unlikely">
+          <label for="Unlikely" class="form-check-label">Unlikely</label>
+        </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="likes">What do you like in freeCodeCamp?</label>
+        <select multiple class="form-control" id="likes">
+          <option disabled>Select all you like</option>
+          <option>Challanges</option>
+          <option>Projects</option>
+          <option>Community</option>
+          <option>Open-Source</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <legend class="col-form-label">What are the areas that can be improved on freeCodeCamp?</legend>
+        <div class="text-center">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="frontEnd" value="front-end projects">
+          <label for="frontEnd" class="form-check-label">Front-End Projects</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="backEnd" value="back-end projects">
+          <label for="backEnd" class="form-check-label">Back-End Projects</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="dataVis" value="data visualization">
+          <label class="form-check-label" for="dataVis">Data Visualization</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="challenges" value="challenges">
+          <label class="form-check-label" for="challenges">Challenges</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="open-source" value="open source community">
+          <label class="form-check-label" for="open-source">Open Source Community</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="gitterHelpRooms" value="Gitter help rooms">
+          <label class="form-check-label" for="gitterHelpRooms">Gitter help rooms</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="videos" value="videos">
+          <label class="form-check-label" for="videos">Videos</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="cityMeetups" value="City Meetups">
+          <label class="form-check-label" for="cityMeetups">City Meetups</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="wiki" value="wiki">
+          <label class="form-check-label" for="wiki">Wiki</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="forum" value="forum">
+          <label class="form-check-label" for="forum">Forum</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="additionalCourses" value="Additional Courses">
+          <label class="form-check-label" for="additionalCourses">Additional Courses</label>
+        </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="comments">Add comments:</label>
+        <textarea class="form-control" id="comments" rows="4"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" id="submit" class="btn btn-success btn-lg btn-block">Submit Response</button>
+      </div>
+    </form>
+  </div>
+</div>
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+
+  
+
+</body>
+
+</html>
