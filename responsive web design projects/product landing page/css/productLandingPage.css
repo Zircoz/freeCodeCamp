@@ -1,0 +1,48 @@
+#contact {
+  margin-top: 7%;
+  margin-bottom: 3.5%;
+}
+
+#contact form {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+#contact form label {
+  margin-top: 5px;
+  color: Red;
+}
+#contact form input {
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+#demo {
+  padding: 5px;
+  margin-top: 7%;
+  margin-bottom: 3.5%;
+}
+
+#video {
+  display: block;
+  margin: auto;
+}
+
+#pricing {
+  margin-top: 7%;
+  margin-bottom: 3.5%;
+}
+
+#footer {
+  display: flex;
+  width: 70%;
+  padding: 5px;
+  padding-top: 10px;
+  margin: auto;
+  margin-top: 20px;
+}
+@media (max-width: 800px){
+  #footer {
+    width: 100%;
+    padding-top: 5px;
+  }
+}
