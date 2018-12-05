@@ -83,7 +83,7 @@ html, body {
   
   @media only screen and (max-width: 500px) {
     nav ul {
-      text-slign: center;
+      text-align: center;
     }
     nav ul li {
       margin: 20px;
